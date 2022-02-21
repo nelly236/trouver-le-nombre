@@ -1,4 +1,104 @@
-body{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2? family= Oswald:wght@200 & family= Patua+One & display=swap');
+/* root = la racine de mes éléments */
+:root{
+    /* -- ce sont des variables*/
+    --title: #f8c27a;
+    --textShadow: 0 2px 2px rgba(0,0,0,.7);
+    --boxshadow: 0 0px 10px rgba (0,0,0,.2);
+}
+
+/* étoile permet d'ajouter du style à tous les éléments html */
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* box-sizing permet de bien dimensionner mes éléments*/
+}
+
+body{
+    /* font-size permet de spécifier la taille de ma police d'écriture */
+    font-size: 14px;
+    width: 100vw;
+    overflow: hidden;
+    /* overflow permet que mon contenu tienne sur une seule page*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+/* élément parent */
+.container{
+    background-color: rgba(255,255,255,.2);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: var(--textShadow);
+
+}
+
+h1{
+    font-family: 'Patua One', cursive ;
+    margin-bottom: 15px;
+    color: #f5af19;
+    text-shadow: var(--textShadow);
+    display: inline-block;
+}
+
+.vies{
+    margin: 10px;
+}
+
+ion-icon{
+    font-size: 50px;
+    fill: red;
+    /* fill permet le changement de couleur de mes icônes heart */
+}
+
+#inputBox{
+    background-color: #2980B9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#inputBox > label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+button{
+    outline: none;
+    border: none;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+
+button{
+    background-color: teal;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    background-color: rgba(0,184,184);
+}
+
+p#message{
+    margin: 20px auto 0 auto;
+}
+
+#rejouer{
+    display: none;
+    margin: 5px auto 0 auto;
+}
+
+#details{
+    font-weight: bold; /* en gras */
+    font-size: 6; /* taille de police plus petit */
+    margin-top: 5px;
 }
