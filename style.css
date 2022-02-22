@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2? family= Oswald:wght@200 & family= Patua+One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Patua+One&display=swap');
+
 /* root = la racine de mes éléments */
 :root{
     /* -- ce sont des variables*/
@@ -19,8 +20,7 @@ body{
     /* font-size permet de spécifier la taille de ma police d'écriture */
     font-size: 14px;
     width: 100vw;
-    overflow: hidden;
-    /* overflow permet que mon contenu tienne sur une seule page*/
+    overflow: hidden;/* overflow: hidden, permet que mon contenu tienne dans un seul bloc sans dépassement */
     height: 100vh;
     display: flex;
     justify-content: center;
